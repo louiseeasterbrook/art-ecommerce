@@ -1,0 +1,26 @@
+.s2-container {
+  /* background-color: blueviolet; */
+  margin: 10rem 0;
+}
+
+.s2-inner {
+  margin: auto;
+  width: 60%;
+  /* background-color: rgb(197, 185, 21); */
+  display: flex;
+}
+
+.s2img-holder {
+  /* background-color: aqua; */
+  /* margin-left: 5rem; */
+}
+
+.profile-img {
+  width: 320px;
+}
+
+.s2-text {
+  /* background-color: rgb(32, 80, 26); */
+  margin: 5rem;
+  line-height: 26px;
+}
