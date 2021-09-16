@@ -9,6 +9,7 @@
   width: 70%;
   max-width: 950px;
   display: flex;
+  justify-content: center;
 }
 
 .links-container {
@@ -51,7 +52,7 @@
 
 .form-container {
   padding: 1rem 0;
-  width: 50%;
+  width: 60%;
 }
 
 .form-container h3 {
@@ -60,6 +61,7 @@
 
 .form-input {
   width: 70%;
+  max-width: 300px;
   line-height: 2rem;
   height: 40px;
   padding: 0;
@@ -74,6 +76,7 @@
 
 form button {
   width: 25%;
+  min-width: 100px;
   height: 40px;
   padding: 0;
   margin: 0;
@@ -88,4 +91,23 @@ form button {
 
 form button:hover {
   background-color: rgb(43, 43, 43);
+}
+
+@media (max-width: 1200px) {
+  .footer-inner {
+    width: 95%;
+  }
+}
+
+@media (max-width: 740px) {
+  .links-container {
+    width: 85%;
+  }
+
+  .form-container {
+    width: 85%;
+  }
+  .footer-inner {
+    flex-direction: column-reverse;
+  }
 }

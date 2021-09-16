@@ -1,18 +1,15 @@
 .s2-container {
-  /* background-color: blueviolet; */
   margin: 10rem 0;
 }
 
 .s2-inner {
   margin: auto;
   width: 60%;
-  /* background-color: rgb(197, 185, 21); */
   display: flex;
 }
 
 .s2img-holder {
-  /* background-color: aqua; */
-  /* margin-left: 5rem; */
+  margin: auto;
 }
 
 .profile-img {
@@ -20,7 +17,26 @@
 }
 
 .s2-text {
-  /* background-color: rgb(32, 80, 26); */
   margin: 5rem;
   line-height: 26px;
+}
+
+@media (max-width: 1200px) {
+  .s2-inner {
+    width: 85%;
+  }
+
+  .s2-text {
+    margin: 3rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .s2-inner {
+    flex-direction: column;
+  }
+
+  .profile-img {
+    width: 100%;
+  }
 }

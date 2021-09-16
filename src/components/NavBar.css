@@ -1,7 +1,6 @@
 .nav-outer {
   height: 14vh;
   width: 100%;
-  /* background-color: brown; */
   border-bottom: 1px solid rgb(206, 206, 206);
 }
 
@@ -9,7 +8,6 @@
   height: 14vh;
   width: 80%;
   margin: auto;
-  /* background-color: rgb(134, 216, 58); */
   position: relative;
   display: flex;
   align-items: center;
@@ -17,19 +15,33 @@
 }
 
 .pageTitle {
-  /* background-color: aqua; */
   margin: auto;
   width: fit-content;
   font-weight: 300;
   letter-spacing: 7px;
+  font-size: 30px;
 }
 
 .shop-icon {
   position: absolute;
   cursor: pointer;
-  /* background-color: blueviolet; */
   right: 0;
   top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .product-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 720px) {
+  .nav-inner {
+    width: 90%;
+  }
+  .pageTitle {
+    font-size: 22px;
+  }
 }
