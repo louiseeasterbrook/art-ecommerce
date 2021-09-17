@@ -20,6 +20,12 @@
   font-weight: 300;
   letter-spacing: 7px;
   font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .shop-icon {
@@ -29,6 +35,11 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
+  color: black;
+}
+
+.shop-icon:hover {
+  color: rgb(70, 70, 70);
 }
 
 @media (max-width: 1200px) {
