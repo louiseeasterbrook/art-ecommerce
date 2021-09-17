@@ -1,22 +1,19 @@
 import "./HomeScreen.css";
 
 //components
-import NavBar from "../components/NavBar";
+
 import SlideShow from "../components/SlideShow";
 
 //sections
 import Section1 from "../sections/Section1";
 import Section2 from "../sections/Section2";
-import Footer from "../components/Footer";
 
-const HomeScreen = () => {
+const HomeScreen = ({ products }) => {
   return (
     <div>
-      <NavBar />
       <SlideShow />
-      <Section1 />
+      <Section1 products={products} />
       <Section2 />
-      <Footer />
     </div>
   );
 };
