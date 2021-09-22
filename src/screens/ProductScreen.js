@@ -4,6 +4,9 @@ import { useParams } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router";
 
+//components
+import Loading from "../components/Loading";
+
 //Actions
 import { getOneProduct } from "../redux/actions/productActions";
 import { addToCart } from "../redux/actions/cartActions";
@@ -34,7 +37,7 @@ const ProductScreen = () => {
     <div className="product-outer">
       <div className="product-inner">
         {loading ? (
-          <h2>Loading..</h2>
+          <Loading />
         ) : error ? (
           <h2>{error}</h2>
         ) : (

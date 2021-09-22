@@ -3,6 +3,9 @@ import ProductCard from "../components/ProductCard";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
+//components
+import Loading from "../components/Loading";
+
 //actions
 import { getProducts as listProducts } from "../redux/actions/productActions";
 
@@ -22,7 +25,7 @@ const Section1 = () => {
       <h2 className="s1-title">Products</h2>
       <div className="product-container">
         {loading ? (
-          <h2>Loading..</h2>
+          <Loading />
         ) : error ? (
           <h2>{error}</h2>
         ) : (
