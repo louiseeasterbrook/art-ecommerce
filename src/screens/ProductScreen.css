@@ -5,7 +5,6 @@
 .product-inner {
   width: 70%;
   max-width: 950px;
-
   margin: auto;
   display: flex;
 }
@@ -31,10 +30,6 @@
 
 .text-holder h2 {
   margin: 0;
-}
-
-.text-holder h4 {
-  /* margin: 0, 1rem; */
 }
 
 .product-desc {
@@ -72,6 +67,10 @@
 }
 
 @media (max-width: 720px) {
+  .product-outer {
+    padding: 1.5rem;
+  }
+
   .product-inner {
     flex-direction: column;
   }
