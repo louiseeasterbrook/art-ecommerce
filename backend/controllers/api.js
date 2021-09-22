@@ -30,6 +30,7 @@ productRouter.post("/", (request, response) => {
   const product = new Product({
     name: body.name,
     description: body.description,
+    price: body.price,
     image: body.image,
   });
 
