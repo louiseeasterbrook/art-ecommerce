@@ -21,13 +21,13 @@ const Footer = () => {
             className="insta-icon icon"
             onClick={() => window.open("https://instagram.com", "_blank")}
           />
-          <p>&copy; Art by Carla 2021</p>
+          <p>&copy; Carla & Fig Art 2021</p>
         </div>
         <div className="form-container">
           <h3>Join our Mailing List</h3>
-          <form>
+          <form className="subscribe-form">
             <input className="form-input" placeholder="Email Address" />
-            <button>Subscribe</button>
+            <button className="form-btn">Subscribe</button>
           </form>
         </div>
       </div>
