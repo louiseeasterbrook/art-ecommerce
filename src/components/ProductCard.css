@@ -2,11 +2,25 @@
   cursor: pointer;
 }
 
-img {
+.card-container:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.displayimg-holder {
+  overflow: hidden;
+}
+
+.card-img {
   width: 100%;
   margin: 0;
 }
 
-h3 {
+.card-container h3 {
   margin: 0;
+  color: black;
+}
+
+.card-container p {
+  color: black;
 }
