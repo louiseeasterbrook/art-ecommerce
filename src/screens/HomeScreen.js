@@ -12,7 +12,7 @@ const HomeScreen = ({ products }) => {
   return (
     <div>
       <SlideShow />
-      <Section1 products={products} />
+      <Section1 />
       <Section2 />
     </div>
   );
