@@ -18,7 +18,6 @@ function App() {
   //get products data
   useEffect(() => {
     axios.get("/api/products").then((response) => {
-      console.log(response.data);
       setProducts(response.data);
     });
   }, []);
@@ -35,7 +34,7 @@ function App() {
             <Route exact path="/cart">
               <CartScreen />
             </Route>
-            <Route exact path="/product">
+            <Route exact path="/product/:id">
               <ProductScreen />
             </Route>
           </Switch>
