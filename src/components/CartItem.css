@@ -1,0 +1,59 @@
+.cartItem-outer {
+  border-bottom: 1px rgb(219, 219, 219) solid;
+}
+
+.cartItem-inner {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.cart-img {
+  height: 90px;
+  padding: 1rem;
+}
+
+.cart-imgholder {
+  width: 15%;
+}
+
+.name-holder {
+  width: 40%;
+}
+
+.cart-name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cart-remove {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 13px;
+}
+
+.cart-remove:hover {
+  color: rgb(121, 121, 121);
+}
+
+.cart-price {
+  width: 15%;
+}
+
+.cart-qty {
+  width: 15%;
+}
+
+.cart-qty input {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+.cart-total {
+  width: 15%;
+}
