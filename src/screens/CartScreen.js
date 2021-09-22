@@ -33,9 +33,9 @@ const CartScreen = () => {
         <h2 className="cart-title">Your Cart</h2>
 
         {cartItems.length === 0 ? (
-          <h2>
-            Your cart is empty <Link to="/">Go Back</Link>
-          </h2>
+          <p className="cart-empty">
+            Your cart is empty, <Link to="/">continue shopping</Link>
+          </p>
         ) : (
           <>
             <div className="cart-headers">

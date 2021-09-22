@@ -27,7 +27,7 @@ const CartItem = ({ item, qtyChange, removeItem }) => {
             />
           </div>
         </div>
-        <div className="mobile-price">
+        <div className="cart-price-container">
           <p className="cart-price">${item.price}</p>
           <p className="cart-remove-mobile" onClick={() => removeItem(item.id)}>
             remove

@@ -5,7 +5,7 @@
 
 .cartItem-inner {
   display: flex;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
   align-items: center;
   margin: 0;
 }
@@ -42,8 +42,11 @@
   display: none;
 }
 
-.cart-price {
+.cart-price-container {
   width: 15%;
+}
+
+.cart-price {
 }
 
 .cart-qty {
@@ -78,12 +81,6 @@ input:focus {
   height: 25px;
   text-align: center;
   margin-left: 1rem;
-}
-
-.mobile-price {
-  /* background-color: blue; */
-  display: flex;
-  flex-direction: column;
 }
 
 .cart-remove-mobile {
@@ -122,6 +119,11 @@ input:focus {
 
   .cart-remove {
     display: none;
+  }
+
+  .mobile-price {
+    display: flex;
+    flex-direction: column;
   }
 
   .cart-qty-mobile {

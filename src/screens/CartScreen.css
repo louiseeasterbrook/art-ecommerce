@@ -16,6 +16,11 @@
   letter-spacing: 5px;
 }
 
+.cart-empty {
+  text-align: center;
+  margin: 3rem;
+}
+
 .cart-headers {
   display: flex;
 
@@ -23,7 +28,7 @@
 }
 
 .cart-headers :nth-child(1) {
-  width: 55%;
+  width: 60%;
 }
 
 .cart-headers :nth-child(2) {
@@ -31,7 +36,7 @@
 }
 
 .cart-headers :nth-child(3) {
-  width: 15%;
+  width: 20%;
 }
 
 .cart-headers :nth-child(4) {
