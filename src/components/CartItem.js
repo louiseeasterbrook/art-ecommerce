@@ -17,8 +17,22 @@ const CartItem = ({ item, qtyChange, removeItem }) => {
           <p className="cart-remove" onClick={() => removeItem(item.id)}>
             remove
           </p>
+          <div className="cart-qty-mobile">
+            <p>Quantity</p>
+            <input
+              type="Number"
+              value={item.qty}
+              //update quantity in state
+              onChange={(e) => qtyChange(item.id, e.target.value)}
+            />
+          </div>
         </div>
-        <p className="cart-price">${item.price}</p>
+        <div className="mobile-price">
+          <p className="cart-price">${item.price}</p>
+          <p className="cart-remove-mobile" onClick={() => removeItem(item.id)}>
+            remove
+          </p>
+        </div>
         <div className="cart-qty">
           <input
             type="Number"

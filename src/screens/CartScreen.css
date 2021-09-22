@@ -1,6 +1,5 @@
 .cart-outer {
   height: auto;
-  /* background-color: blue; */
 }
 
 .cart-inner {
@@ -43,15 +42,14 @@
   margin-top: 3rem;
   position: relative;
   height: 200px;
-
   width: 100%;
 }
 
 .cart-bottom-inner {
   width: 30%;
-
   position: absolute;
   right: 0;
+  height: 200px;
 }
 
 .subtotal {
@@ -85,4 +83,21 @@
   width: 100%;
   min-width: 180px;
   max-width: 320px;
+}
+
+@media (max-width: 720px) {
+  .cart-headers > p {
+    display: none;
+  }
+
+  .cart-inner {
+    width: 95%;
+  }
+
+  .cart-bottom-inner {
+    width: 80%;
+    text-align: center;
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
