@@ -17,11 +17,22 @@
 .pageTitle {
   margin: auto;
   width: fit-content;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 7px;
   font-size: 30px;
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
+}
+
+.pageTitle:hover {
+  color: grey;
+}
+
+.nav-blurb {
+  text-align: center;
+  font-weight: 100;
+  margin: 5px;
 }
 
 .link {
@@ -53,6 +64,14 @@
     width: 90%;
   }
   .pageTitle {
-    font-size: 22px;
+    font-size: 18px;
+  }
+
+  .nav-blurb {
+    margin: 0;
+  }
+
+  .shop-icon {
+    font-size: 18px;
   }
 }
