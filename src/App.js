@@ -1,7 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import { Helmet } from "react-helmet";
 
 //screens
 import HomeScreen from "./screens/HomeScreen";
@@ -13,23 +12,17 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
 function App() {
-  const [products, setProducts] = useState([]);
-
-  //get products data
-  useEffect(() => {
-    axios.get("/api/products").then((response) => {
-      setProducts(response.data);
-    });
-  }, []);
-
   return (
     <div className="App">
       <Router>
+        <Helmet>
+          <title>Carla & Fig Art</title>
+        </Helmet>
         <NavBar />
         <main>
           <Switch>
             <Route exact path="/">
-              <HomeScreen products={products} />
+              <HomeScreen />
             </Route>
             <Route exact path="/cart">
               <CartScreen />
