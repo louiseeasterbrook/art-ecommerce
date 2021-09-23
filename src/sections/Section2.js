@@ -1,14 +1,17 @@
 import "./Section2.css";
 
-//images
-import Person from "../images/extra5.jpeg";
-
 const Section2 = () => {
   return (
     <div className="s2-container">
       <div className="s2-inner">
         <div className="s2img-holder">
-          <img src={Person} alt="Carla" className="profile-img" />
+          <img
+            src={
+              "https://images.pexels.com/photos/6694310/pexels-photo-6694310.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            }
+            alt="Carla"
+            className="profile-img"
+          />
         </div>
         <div className="s2-text">
           <h2>Hi There!</h2>
