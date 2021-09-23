@@ -60,7 +60,7 @@ const ProductScreen = () => {
                 value={qty}
                 onChange={(e) => setQty(e.target.value)}
               ></input>
-              <button className="add-button" onClick={addToCartHandler}>
+              <button className="add-btn" onClick={addToCartHandler}>
                 Add to cart
               </button>
             </div>

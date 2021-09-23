@@ -46,7 +46,7 @@
   width: 30%;
   min-width: 80px;
 }
-.add-button {
+.add-btn {
   margin-top: 1rem;
   cursor: pointer;
   height: 35px;
@@ -58,6 +58,12 @@
   width: 100%;
   min-width: 180px;
   max-width: 320px;
+}
+
+.add-btn:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
 }
 
 @media (max-width: 1200px) {
