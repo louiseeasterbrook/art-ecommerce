@@ -40,17 +40,35 @@
 }
 
 .shop-icon {
-  position: absolute;
-  cursor: pointer;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
   font-size: 20px;
   color: black;
 }
 
 .shop-icon:hover {
   color: rgb(70, 70, 70);
+}
+
+.icon-holder {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+}
+
+.cart-counter {
+  position: absolute;
+  margin-left: 3px;
+  background-color: rgb(211, 150, 150);
+  width: 20px;
+  height: 20px;
+  border-radius: 15rem;
+  text-align: center;
+  left: 60%;
+  top: -30%;
+  color: white;
+  line-height: 20px;
 }
 
 @media (max-width: 1200px) {
