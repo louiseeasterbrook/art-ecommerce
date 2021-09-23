@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 //components
 import CartItem from "../components/CartItem";
-import Loading from "../components/Loading";
 
 //Actions
 import { addToCart, removeFromCart } from "../redux/actions/cartActions";
@@ -37,7 +36,6 @@ const CartScreen = () => {
         {cartItems.length === 0 ? (
           <p className="cart-empty">
             Your cart is empty, <Link to="/">continue shopping</Link>
-            <Loading />
           </p>
         ) : (
           <>
