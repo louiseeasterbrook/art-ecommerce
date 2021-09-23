@@ -2,7 +2,8 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
-const productRouter = require("./controllers/api");
+const productRouter = require("./controllers/productApi");
+const imageRouter = require("./controllers/imagesApi");
 
 require("dotenv").config();
 
@@ -21,6 +22,8 @@ mongoose
 app.use(cors());
 app.use(express.json());
 
+//routes
 app.use("/api/products", productRouter);
+app.use("/api/slideshow", imageRouter);
 
 module.exports = app;
