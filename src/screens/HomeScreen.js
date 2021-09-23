@@ -8,7 +8,7 @@ import SlideShow from "../components/SlideShow";
 import Section1 from "../sections/Section1";
 import Section2 from "../sections/Section2";
 
-const HomeScreen = ({ products }) => {
+const HomeScreen = () => {
   return (
     <div>
       <SlideShow />
