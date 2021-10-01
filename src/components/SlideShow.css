@@ -3,7 +3,10 @@
 }
 
 .slideShow-container {
-  height: 75vh;
+  background-color: rgb(230, 230, 230);
+  height: calc(100vw * 0.3);
+  max-height: 60vh;
+  min-height: 40vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -29,7 +32,6 @@
 
 .dot-holder {
   position: absolute;
-  /* background-color: aqua; */
   width: 100px;
   height: 20px;
   left: 50%;
