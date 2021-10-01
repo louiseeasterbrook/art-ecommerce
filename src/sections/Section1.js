@@ -1,10 +1,10 @@
 import "./Section1.css";
-import ProductCard from "../components/ProductCard";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 //components
 import Loading from "../components/Loading";
+import ProductCard from "../components/ProductCard";
 
 //actions
 import { getProducts as listProducts } from "../redux/actions/productActions";
@@ -23,13 +23,13 @@ const Section1 = () => {
   return (
     <div className="s1-container">
       <h2 className="s1-title">Products</h2>
-      <div className="product-container">
-        {loading ? (
-          <Loading />
-        ) : error ? (
-          <h2>{error}</h2>
-        ) : (
-          products.map((el) => (
+      {loading ? (
+        <Loading />
+      ) : error ? (
+        <h2>{error}</h2>
+      ) : (
+        <div className="product-container">
+          {products.map((el) => (
             <ProductCard
               key={el._id}
               image={el.image}
@@ -37,9 +37,9 @@ const Section1 = () => {
               price={el.price}
               id={el._id}
             />
-          ))
-        )}
-      </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
