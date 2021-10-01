@@ -1,8 +1,20 @@
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const emailUpdate = (event) => {
+    console.log(event.target.value);
+    setEmail(event.target.value);
+  };
+
+  const subscribe = (event) => {
+    event.preventDefault();
+    setEmail("");
+  };
   return (
     <div className="footer-outer">
       <div className="footer-inner">
@@ -26,8 +38,15 @@ const Footer = () => {
         <div className="form-container">
           <h3>Join our Mailing List</h3>
           <form className="subscribe-form">
-            <input className="form-input" placeholder="Email Address" />
-            <button className="form-btn">Subscribe</button>
+            <input
+              className="form-input"
+              placeholder="Email Address"
+              value={email}
+              onChange={emailUpdate}
+            />
+            <button className="form-btn" onClick={subscribe}>
+              Subscribe
+            </button>
           </form>
         </div>
       </div>
