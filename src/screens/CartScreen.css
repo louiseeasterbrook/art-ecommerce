@@ -90,6 +90,10 @@
   max-width: 320px;
 }
 
+.checkout-btn:hover {
+  background-color: rgb(43, 43, 43);
+}
+
 @media (max-width: 720px) {
   .cart-headers > p {
     display: none;
