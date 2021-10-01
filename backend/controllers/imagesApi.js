@@ -1,5 +1,5 @@
 const imageRouter = require("express").Router();
-const Image = require("../models/ImageSchema");
+const Image = require("../models/imageSchema");
 
 //get all images
 imageRouter.get("/", (request, response) => {
