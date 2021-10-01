@@ -21,6 +21,15 @@ const ProductScreen = () => {
   const productDetails = useSelector((state) => state.getOneProduct);
   const { product, loading, error } = productDetails;
 
+  const changeQty = (event) => {
+    //dont let qty go below 1
+    if (event.target.value < 1) {
+      setQty(1);
+    } else {
+      setQty(event.target.value);
+    }
+  };
+
   //fetch product data
   useEffect(() => {
     if (product && id !== product._id) {
@@ -58,7 +67,7 @@ const ProductScreen = () => {
                 className="quantity-input"
                 type="number"
                 value={qty}
-                onChange={(e) => setQty(e.target.value)}
+                onChange={changeQty}
               ></input>
               <button className="add-btn" onClick={addToCartHandler}>
                 Add to cart

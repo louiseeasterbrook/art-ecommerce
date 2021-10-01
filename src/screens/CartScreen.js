@@ -15,6 +15,10 @@ const CartScreen = () => {
 
   //updating qty change of cart item in state
   const qtyChange = (id, qty) => {
+    //make sure quantity cannot go below 1
+    if (qty < 1) {
+      qty = 1;
+    }
     dispatch(addToCart(id, qty));
   };
 
