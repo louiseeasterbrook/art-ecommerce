@@ -1,7 +1,7 @@
 const app = require("./app"); //Express application
 const http = require("http");
 require("dotenv").config();
-const config = require("../utils/config");
+const config = require("./utils/config");
 
 const server = http.createServer(app);
 const port = config.PORT || 5000;
