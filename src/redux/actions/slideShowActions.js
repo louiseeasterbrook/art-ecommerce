@@ -4,7 +4,7 @@ import axios from "axios";
 export const getSlideShow = () => async (dispatch, getState) => {
   try {
     dispatch({ type: actionTypes.GET_IMAGES_REQUEST });
-    const { data } = await axios.get("/api/slideshow");
+    const { data } = await axios.get("http://localhost:3001/api/slideshow");
 
     dispatch({
       type: actionTypes.GET_IMAGES_SUCCESS,
