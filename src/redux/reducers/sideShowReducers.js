@@ -5,20 +5,20 @@ export const getSlideShowReducer = (state = { images: [] }, action) => {
     //PRODUCTS REQUEST
     case actionTypes.GET_IMAGES_REQUEST:
       return {
-        loading: true,
+        loading1: true,
         images: [],
       };
     //SUCCESS GET PRODUCTS
     case actionTypes.GET_IMAGES_SUCCESS:
       return {
-        loading: false,
+        loading1: false,
         images: action.payload,
       };
     //FAIL TO GET PRODUCTS
     case actionTypes.GET_IMAGES_FAIL:
       return {
-        loading: false,
-        images: action.payload,
+        loading1: false,
+        error1: action.payload,
       };
 
     default:
