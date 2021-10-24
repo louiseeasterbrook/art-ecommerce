@@ -8,13 +8,11 @@ import {
   getProductsReducer,
   getOneProductReducer,
 } from "./reducers/productReducers";
-import { getSlideShowReducer } from "./reducers/sideShowReducers";
 
 const reducer = combineReducers({
   cart: cartReducer,
   getProducts: getProductsReducer,
   getOneProduct: getOneProductReducer,
-  getSSImages: getSlideShowReducer,
 });
 
 //helps to make async requests
