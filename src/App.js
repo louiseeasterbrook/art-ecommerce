@@ -1,6 +1,5 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Helmet } from "react-helmet";
 
 //screens
 import HomeScreen from "./screens/HomeScreen";
@@ -16,9 +15,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Helmet>
-          <title>Carla & Fig Art</title>
-        </Helmet>
         <NavBar />
         <main>
           <ScrollToTop />
